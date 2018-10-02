@@ -205,6 +205,9 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libril-qc-qmi-1.so|rild_socket.so \
     /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(VENDOR_PATH)
+
 # Vintf
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 

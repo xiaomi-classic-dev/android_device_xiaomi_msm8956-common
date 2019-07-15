@@ -37,6 +37,9 @@ ro.qualcomm.bt.hci_transport=smd
 media.camera.ts.monotonic=1
 persist.camera.HAL3.enabled=1
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.cne.feature=1
 

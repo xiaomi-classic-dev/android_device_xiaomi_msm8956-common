@@ -103,9 +103,6 @@ TARGET_TS_MAKEUP := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/vendor/bin/mm-qcamera-daemon=23
 
-# Charger
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # CNE
 BOARD_USES_QCNE := true
 

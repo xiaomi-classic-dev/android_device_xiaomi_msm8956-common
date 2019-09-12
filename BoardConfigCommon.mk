@@ -201,10 +201,6 @@ PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := caf
 TARGET_USES_OLD_MNC_FORMAT := true
 
-# SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
-
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 

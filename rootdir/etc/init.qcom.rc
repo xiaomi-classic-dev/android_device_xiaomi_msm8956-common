@@ -346,7 +346,6 @@ on property:vendor.bluetooth.hciattach=false
 service qcom-sh /system/vendor/bin/init.qcom.sh
     class late_start
     user root
-    seclabel u:r:qti_init_shell:s0
     oneshot
 
 # FM

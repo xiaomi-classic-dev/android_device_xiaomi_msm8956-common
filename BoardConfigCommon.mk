@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 VENDOR_PATH := device/xiaomi/msm8956-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include

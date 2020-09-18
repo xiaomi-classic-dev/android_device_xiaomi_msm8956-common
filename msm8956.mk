@@ -176,6 +176,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl
 
+# Dummy hidl lib for oreo blobs
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \

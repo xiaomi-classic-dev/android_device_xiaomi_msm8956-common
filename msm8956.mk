@@ -132,6 +132,7 @@ PRODUCT_PACKAGES += \
 
 # DataServices
 PRODUCT_PACKAGES += \
+    libaudioclient_shim \
     librmnetctl \
     rild_socket
 

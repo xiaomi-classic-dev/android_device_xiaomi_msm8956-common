@@ -215,9 +215,6 @@ on post-fs-data
     mkdir /data/fota 0771
     chown system system /data/fota
 
-    # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
-
     mkdir /data/audio/ 0770 media audio
 
     setprop vold.post_fs_data_done 1
@@ -431,9 +428,6 @@ service msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqba
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-on property:vold.decrypt=trigger_restart_min_framework
-    start time_daemon
-
 #start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
@@ -459,12 +453,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-client stream 0666 system system
    socket thermal-recv-client stream 0660 system system
    socket thermal-recv-passive-client stream 0666 system system
-   group root
-   writepid /dev/cpuset/system-background/tasks
-
-service time_daemon /vendor/bin/time_daemon
-   class late_start
-   user root
    group root
    writepid /dev/cpuset/system-background/tasks
 
